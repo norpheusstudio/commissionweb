@@ -61,6 +61,26 @@
                 color: white;
                 font-size: 40px;
             }
+            .respara {
+                font-family: Segoe UI;
+                text-shadow: 1px 2px 2px #000000;
+                color: white;
+                font-size: 20px;
+            }
+            .buttonresnow {
+                color: rgb(0, 0, 0);
+                font-size: 15px;
+                border-radius: 20px;
+                background-color: rgb(193, 193, 193);
+                margin: 0px 0px 300px 0px;
+                padding: 10px 20px 10px 20px;
+            }
+            .contactpara {
+                font-family: Segoe UI;
+                text-shadow: 1px 2px 2px #000000;
+                color: white;
+                font-size: 30px;
+            }
 
 
             nav {
@@ -102,7 +122,7 @@
             <a href="#Price"><li>Price</li></a>
             <a href="#Rules"><li>Rules</li></a>
             <a href="#Contact"><li>Contact</li></a>
-            <a href=""><li>Add to Cart</li></a>
+            <a href="#Reserve"><li>Reserve</li></a>
         </nav>
 
         <header class="header">
@@ -216,7 +236,52 @@
     <hr>
                 <section id="Contact">
                     <h3 class="sectionh3">Contact</h3>
-                    <p></p>
+                    <p class="contactpara">You may contact me via: <br>
+                        tumblr: <br>
+                        once-a-someone <br>
+    <br>
+                        insta: <br>
+                        @not_a_someone <br>
+                    </p>
+                </section>
+
+                <section id="Reserve">
+                    <h3 class="sectionh3">Reserve</h3>
+
+                    <div>
+                        <form action="https://formspree.io/f/mzbnbqzk" method="POST">
+                        <ul class="ulrespar">Name <input type="name" placeholder="Name" required></ul>
+                        <ul>Country 
+                          <select name="Country" placeholder="Select Country">
+                            <option value="North America">North America</option>
+                            <option value="South America">South America</option>
+                            <option value="Europe">Europe</option>
+                            <option value="Africa">Africa</option>
+                            <option value="Asia">Asia</option>
+                            <option value="Australia">Australia</option>
+                          </select>
+                        </ul>
+                        
+                        <ul>Reserve Now <br>
+                        <p class="respara">Headshots</p>
+                            <input type="checkbox" name="Sketch - 16 USD / 889PHP">Sketch - 16 USD / 889PHP <br>
+                            <input type="checkbox" name="Colored - 25 USD / 1389 PHP">Colored - 25 USD / 1389 PHP <br>
+                        <p class="respara">Half Body</p>
+                            <input type="checkbox" name="Sketch - 18 USD / 1000PHP">Sketch - 18 USD / 1000PHP <br>
+                            <input type="checkbox" name="Colored - 32 USD / 1778PHP">Colored - 32 USD / 1778PHP <br>
+                        <p class="respara">Full Body</p>
+                            <input type="checkbox" name="Sketch - 20 USD / 1111PHP">Sketch - 20 USD / 1111PHP <br>
+                            <input type="checkbox" name="Colored - 40 USD / 2223PHP">Colored - 40 USD / 2223PHP <br>
+                        <p class="respara">Additional</p>
+                            <input type="checkbox" name="Additional Characters + 10 USD / 555php">Additional Characters + 10 USD / 555php <br>
+                            <input type="checkbox" name="BG + 15 USD / 833PHP">BG + 15 USD / 833PHP <br>
+    <br>
+                        <input type="text" name="Name" placeholder="Type YES to Confirm" required>
+                          </ul>
+                        <button class="buttonresnow">Reserve Now!</button>
+                    </form>
+                    </div>
+
                 </section>
             </div>
         </fieldset>
