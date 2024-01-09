@@ -262,9 +262,9 @@
                     
                     <div>
                         <form action="https://formspree.io/f/mzbnbqzk" method="POST">
-                        <ul class="ulrespar">Name: <input type="name" name="Name" placeholder="Name" required></ul>
+                        <ul class="ulrespar">Name: <input type="name" name="Name" placeholder="Input your Name" required></ul>
                         <ul>Region: 
-                          <select name="Country" placeholder="Select Country">
+                          <select name="Country" placeholder="Select Country" required>
                             <option value="North America">North America*</option>
                             <option value="South America">South America*</option>
                             <option value="Europe">Europe*</option>
@@ -274,7 +274,6 @@
                           </select>
                         </ul>
                         
-                        <ul>Reserve Now <br>
                         <p class="respara">Headshots</p>
                             <input type="checkbox" name="Sketch - 16 USD / 889PHP">Sketch - 16 USD / 889PHP <br>
                             <input type="checkbox" name="Colored - 25 USD / 1389 PHP">Colored - 25 USD / 1389 PHP <br>
@@ -288,7 +287,12 @@
                             <input type="checkbox" name="Additional Characters + 10 USD / 555php">Additional Characters + 10 USD / 555php <br>
                             <input type="checkbox" name="BG + 15 USD / 833PHP">BG + 15 USD / 833PHP <br>
     <br>
-                          </ul>
+                        <label for="name"><b class="respara">Reserve time:</b></label> <br>
+                        <input type="time" name="Deadline" required> <br>
+                        <input type="checkbox" name="Deadline_AM" >AM 
+                        <input type="checkbox" name="Deadline_PM" >PM <br>
+                        <p>*It may take so long to respond on your reserveation <br> *WORKING STUDENT!! </p>
+    <br>
                         <button class="buttonresnow">Reserve Now!</button>
                     </form>
                     </div>
